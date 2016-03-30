@@ -11,7 +11,8 @@ def download(url, name):
 
 
 def find_css(content):
-    return ['css']
+    ptn = re.compile(r'<link[^>]+href="([^"]+)"[^>]+\/>')
+    return ptn.findall(content)
 
 
 if __name__ == '__main__':
