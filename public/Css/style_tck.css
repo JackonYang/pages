@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,ul,li{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.floatLeft{ float:left;}
+.floatRight{float:right;}
+.clear{ clear:both; font-size:0px; line-height:0px}
+a{color:#2A5DA9; text-decoration:none;}
+a:hover{text-decoration: underline}
+img{border:0px;}
+.paddingT{padding:0 20px}
+.marginTop{margin-top:10px}
+/*-----------------登录----------------------------*/
+
+
+#LoginDiv{ position:absolute; top:0px; right:0px;display:none; z-index:33344     }
+#box_{ height:300px; }
+.LoginDiv,.tag_shopping,.tag_prize,.tagSaveAddress{width:264px ;/*margin:50px auto;*/ background:url(/images/tag_login.jpg) no-repeat;border:1px solid  #960; background-color:#FCEFDE; position: relative;}
+#close,#close span{width:30px;height:25px; position:relative;right:0;top:0;cursor:pointer; display:inline; float:right;}
+.Login{margin-top:40px;padding:15px ;}
+.Shopping{margin-top:40px;padding:15px ;}
+.inputDiv{ background:#FAF0E7;_width:212px;border:1px solid #963;padding:20px 10px ;line-height:25px;margin:0 auto; font-size:14px; }
+.inputDivLogin{ background:#FAF0E7;_width:212px;border:1px solid #963;padding:20px 10px ;line-height:25px;margin:0 auto;}
+.inputDiv_addre{ background:#FAF0E7;_width:212px;border:1px solid #963;padding:20px 10px ; line-height:25px;margin:0 auto; }
+.textStyle{width:144px;height:20px; line-height:20px; border:1px solid #9d6b48; margin-right:2px;}
+.confrimDiv{ padding:10px 0 0 0;}
+
+
+/*-----------------购买物品----------------------------*/
+.tag_shopping{ background:url(/images/scImgs/tag_gmwp.jpg) no-repeat;width:369px;background-color:#FCEFDE; position: absolute; top:0; height:300px;}
+.flimg,.flimg img{ float:left; width:76px; height:76px;}
+.proInfo{ width:210px; overflow:hidden; float:left; margin-left:15px;}
+.ycqLi{ color:gray}
+.Shopping{padding:25px 20px }
+
+.gmsl span,.gmsl a{display:block;float:left; height:22px;}
+.fontColor_green {
+	color: #090;
+}
+.gmsl a{ width:20px; text-align:center}
+
+#shopingPreMenu{ background:url(/images/jt_pre.jpg) center no-repeat}
+#shopingNextMenu{ background:url(/images/jt_next.jpg) center no-repeat}
+
+/*-----------------兑换奖品----------------------------*/
+.tag_prize{ background:url(/images/jplyImgs/tag_dhlp3.jpg) no-repeat; width:369px; background-color:#FCEFDE;}
+.addAddress{ padding-left:80px; }
+.addAddress a{color:#00C}
+
+/*-----------------添加地址----------------------------*/
+.tagSaveAddress{ background:url(/images/jplyImgs/tag_address.jpg) no-repeat;width:369px; background-color:#FCEFDE;  }
+.tagSaveAddress ul{padding:0 20px}
+.tagSaveAddress li{ margin-bottom:2px}
