@@ -107,5 +107,9 @@ if __name__ == '__main__':
         os.makedirs(path)
 
     # request home page
-    home_name = os.path.join(path, 'index.html')
-    download_page(url_home, home_name)
+    # home_name = os.path.join(path, 'index.html')
+    # download_page(url_home, home_name)
+
+    url = 'http://2479.com/Default.aspx'
+    name = os.path.join(path, 'Default.aspx')
+    download_page(url, name)
