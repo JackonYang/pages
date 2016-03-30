@@ -17,7 +17,7 @@
     var ibk = 1;
     function reloadcode1() {
         ibk = ibk + 1;
-        document.getElementById('showimg_img1').src = "ShowIMG.aspx?xxx=" + ibk + "";
+        document.getElementById('showimg_img1').src = "ShowIMG.html?xxx=" + ibk + "";
     }
 
     function pay() {
@@ -55,7 +55,7 @@
 
         document.getElementById("div_show1").style.display = "none";
         document.getElementById("div_show2").style.display = "block";
-        ajaxCheck("jftpay/Send3.aspx?user_Name_text=" + user_Name_text + "&strNew=" + strNew + "&Text_payyzm=" + Text_payyzm + "&select_count=" + select_count + "", "", function (responsetext) {
+        ajaxCheck("jftpay/Send3.html?user_Name_text=" + user_Name_text + "&strNew=" + strNew + "&Text_payyzm=" + Text_payyzm + "&select_count=" + select_count + "", "", function (responsetext) {
             if (responsetext == "用户账号不存在,请重新输入!") {
                 alert(responsetext);
             }
@@ -66,7 +66,7 @@
                 
             }
         })
-        window.open("jftpay/Send3.aspx?key=1&user_Name_text=" + user_Name_text + "&strNew=" + strNew + "&Text_payyzm=" + Text_payyzm + "&select_count=" + select_count + "");
+        window.open("jftpay/Send3.html?key=1&user_Name_text=" + user_Name_text + "&strNew=" + strNew + "&Text_payyzm=" + Text_payyzm + "&select_count=" + select_count + "");
         document.getElementById("div_show1").style.display = "block";
         document.getElementById("div_show2").style.display = "none";
     }
@@ -75,25 +75,25 @@
 
 </title></head>
 <body>
-<form id="EmailForm" style="display:none;" action="jftpay/PayYibaoDK.aspx" method="get" target="_blank">
+<form id="EmailForm" style="display:none;" action="jftpay/PayYibaoDK.html" method="get" target="_blank">
 <input id="orderId" name="orderId"  type="hidden" />//隐藏域，用来放需要传递的参数
 <input id="bank_payMoney" name="bank_payMoney"  type="hidden" />//隐藏域，用来放需要传递的参数
 <input id="strNew" name="strNew"  type="hidden" />//隐藏域，用来放需要传递的参数
 </form>
-    <form name="form1" method="post" action="jftpay/Send1.aspx" id="form1" target="_blank">
+    <form name="form1" method="post" action="jftpay/Send1.html" id="form1" target="_blank">
 <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTU4MjU5Njc4OWRkUCPC6HVsgQl+lNKLrpmXdU5YSr6ECHvR1HC2za6ddKA=" />
 
     <div class="wrap">
 <div class="topbg">
 <div class="topw">
 
-<h1></br><a href="../Default.aspx"><img src="http://www.2479.com/upload/logo/2479logo.png" alt="【2479游戏城】_国内最大了游戏平台官方网站游戏平台" /></a></h1>
+<h1></br><a href="../Default.html"><img src="http://www.2479.com/upload/logo/2479logo.png" alt="【2479游戏城】_国内最大了游戏平台官方网站游戏平台" /></a></h1>
 
 
 <div class="topTagDiv" id="topLoginIn">
 <div id="denglu_div" style="display:block; color:#2A5DA9;"><a name="toptop" id="toptop"></a><a title="设为首页" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.biyinqp.com');" style="color:#2A5DA9;" href="javascript:;">设为首页</a>
-<a href="javascript:void(0)" style="color:#2A5DA9;" onclick="addfavorite()">收藏</a>&nbsp;&nbsp;&nbsp;&nbsp;您好，欢迎光临【2479游戏城】_国内最大了游戏平台官方网站  请 <a id="but" class="action-newtopic" href="javascript:;">登录</a> |   <a href="../Register.aspx">注册</a></div>
-<div id="dengluhou_div" style="display:none; color:#2A5DA9;"><a href="../UsersMembers.aspx"></a> 您好，欢迎光临【2479游戏城】_国内最大了游戏平台官方网站  | <a href="../Default.aspx?tid=1">退出</a></div>
+<a href="javascript:void(0)" style="color:#2A5DA9;" onclick="addfavorite()">收藏</a>&nbsp;&nbsp;&nbsp;&nbsp;您好，欢迎光临【2479游戏城】_国内最大了游戏平台官方网站  请 <a id="but" class="action-newtopic" href="javascript:;">登录</a> |   <a href="../Register.html">注册</a></div>
+<div id="dengluhou_div" style="display:none; color:#2A5DA9;"><a href="../UsersMembers.html"></a> 您好，欢迎光临【2479游戏城】_国内最大了游戏平台官方网站  | <a href="../Default.html?tid=1">退出</a></div>
 </div>
  
      <script type="text/javascript" src="js/Login.js"></script>
@@ -110,7 +110,7 @@
 </div>
 <script type="text/javascript">
     function SavDownLoad() {
-        ajaxCheck("../zt/20130715/temp.aspx?download=1", "", function (responsetext) {
+        ajaxCheck("../zt/20130715/temp.html?download=1", "", function (responsetext) {
             if (responsetext == "OK") {
                 //alert(responsetext);
             }
@@ -155,7 +155,7 @@
                             </td>
                             <td>
                                 <a href="javascript:;" onclick="reloadcode()" title="点击重新获取">
-                                    <img id="showimg_img" src="../ShowIMG.aspx" alt="点击重新获取" style="height: 20px;" /></a>
+                                    <img id="showimg_img" src="../ShowIMG.html" alt="点击重新获取" style="height: 20px;" /></a>
                             </td>
                         </tr>
                     </table>
@@ -172,7 +172,7 @@
                         记住账号
                     </td>
                     <td>
-                        <a href="GetPassword.aspx">忘记密码？</a>
+                        <a href="GetPassword.html">忘记密码？</a>
                     </td>
                 </tr>
             </table>
@@ -181,7 +181,7 @@
             <table>
                 <tr>
                     <td style="width: 60%;">
-                      <a href="../Register.aspx">
+                      <a href="../Register.html">
                             <img src="../images/zhuce_01.png" onmouseup="this.src='../images/zhuce_02.png'" onmousedown="this.src='../images/zhuce_03.png'"
                                 onmouseout="this.src='../images/zhuce_01.png'" onmouseover="this.src='images/zhuce_02.png'" />
                               </a>
@@ -247,11 +247,11 @@
         </table>
     </div>
     <div style="margin-top: 10px; margin-left: 20px; font-size: 14px; color: #5F3601;">
-        <a href="../UsersModification.aspx"><img src="../images/xiugaiziliao1.png" onmouseup="this.src='../images/xiugaiziliao2.png'"
+        <a href="../UsersModification.html"><img src="../images/xiugaiziliao1.png" onmouseup="this.src='../images/xiugaiziliao2.png'"
                 onmousedown="this.src='../images/xiugaiziliao3.png'" onmouseout="this.src='../images/xiugaiziliao1.png'" onmouseover="this.src='images/xiugaiziliao2.png'" /></a> 
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <span style="color: Red;">
-                <a href="../Default.aspx?tid=1" style="color: #0000CC;">
+                <a href="../Default.html?tid=1" style="color: #0000CC;">
                 <img src="../images/anquantuic1.png" onmouseup="this.src='../images/anquantuic2.png'" onmousedown="this.src='../images/anquantuic3.png'" 
                 onmouseout="this.src='../images/anquantuic1.png'" onmouseover="this.src='images/anquantuic2.png'" />
                 </a>
@@ -272,14 +272,14 @@
 <tr><td>
 <div>
 <ul class="box_kstd">
-<li><a href="UsersMembers.aspx">个人中心</a></li> 
+<li><a href="UsersMembers.html">个人中心</a></li> 
 <li><a href="http://www.2479.com/" class="cf00" target="_blank"><b>论坛交流</b></a></li>
-<li><a href="UsersMembers.aspx">密码保护</a></li>
-<li><a href="FhUserList.aspx">封号名单</a></li>
-<li><a href="GetPassword.aspx">找回密码</a></li>
-<li><a href="EditPassWord.aspx">修改密码</a></li>
-<li><a href="HopeHome.aspx">帮助中心</a></li>
-<li><a href="FeedBack.aspx">反馈意见</a></li>
+<li><a href="UsersMembers.html">密码保护</a></li>
+<li><a href="FhUserList.html">封号名单</a></li>
+<li><a href="GetPassword.html">找回密码</a></li>
+<li><a href="EditPassWord.html">修改密码</a></li>
+<li><a href="HopeHome.html">帮助中心</a></li>
+<li><a href="FeedBack.html">反馈意见</a></li>
 <li><a href="#">家长监护</a></li>
 <li><a href="#" class="cf00"><b>比赛专区</b></a></li>
 </ul>
@@ -334,12 +334,12 @@
 
 <div id="nav"><!--NAV BEGIN-->
 <ul>
-<li class="nav0"><a href="Default.aspx" target="_self" title="官方首页">官方首页</a></li>
-<li class="nav1"><a href="NewList.aspx?sid=1" target="_self" title="新闻动态">新闻动态</a></li>
-<li class="nav2"><a href="GameList.aspx" target="_self" title="游戏介绍">游戏介绍</a></li>
-<li class="nav3"><a href="../PayStypeList.aspx" target="_self" title="游戏论坛">帐号充值</a></li>
-<li class="nav4"><a href="JpShop.aspx" target="_self" title="奖品商城">奖品商城</a></li>
-<li class="nav5"><a href="HopeHome.aspx" target="_self" title="帮助中心">帮助中心</a></li>
+<li class="nav0"><a href="Default.html" target="_self" title="官方首页">官方首页</a></li>
+<li class="nav1"><a href="NewList.html?sid=1" target="_self" title="新闻动态">新闻动态</a></li>
+<li class="nav2"><a href="GameList.html" target="_self" title="游戏介绍">游戏介绍</a></li>
+<li class="nav3"><a href="../PayStypeList.html" target="_self" title="游戏论坛">帐号充值</a></li>
+<li class="nav4"><a href="JpShop.html" target="_self" title="奖品商城">奖品商城</a></li>
+<li class="nav5"><a href="HopeHome.html" target="_self" title="帮助中心">帮助中心</a></li>
 </ul>
 </div>
 <div style="background:url(../images/zhanghuchongz.png); margin-top:60px; height:87px;">
@@ -375,7 +375,7 @@
 <option value="1000">充1000元，获得元宝800个</option>
 </select><span style="color:Red;">*</span>请选择您要充值的元宝数量</td></tr>
 <tr><td></td><td>&nbsp;</td></tr>
-<tr><td style="width:80px; font-size:14px; color:#2A5DA9;">验证码:</td><td><table><tr><td><input id="Text_payyzm"  name="Text_payyzm" value="" style="background:url(../images/pay_yanzhenma.jpg) no-repeat scroll left top transparent; border: 0 none; height: 28px; width:122px; line-height: 28px; padding: 0 3px; vertical-align: middle;"/></td><td><a href="javascript:;" onclick="reloadcode1()" title="点击重新获取"><img id="showimg_img1" src="ShowIMG.aspx" alt="点击重新获取" style="height:20px;"/></a></td></tr></table></td></tr>
+<tr><td style="width:80px; font-size:14px; color:#2A5DA9;">验证码:</td><td><table><tr><td><input id="Text_payyzm"  name="Text_payyzm" value="" style="background:url(../images/pay_yanzhenma.jpg) no-repeat scroll left top transparent; border: 0 none; height: 28px; width:122px; line-height: 28px; padding: 0 3px; vertical-align: middle;"/></td><td><a href="javascript:;" onclick="reloadcode1()" title="点击重新获取"><img id="showimg_img1" src="ShowIMG.html" alt="点击重新获取" style="height:20px;"/></a></td></tr></table></td></tr>
 <tr><td></td><td>&nbsp;</td></tr>
 <tr><td style="width:80px; font-size:14px; color:#2A5DA9;">选择点卡:</td><td>
 <div class="banklist"><ul>
@@ -425,7 +425,7 @@
 <div class="footerDiv">
 <div class="footer">
 <p>
-<a href="Register.aspx" target="_blank">首页注册</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.baidu.com">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="NewShow.aspx?id=62">游戏协议</a></p>
+<a href="Register.html" target="_blank">首页注册</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.baidu.com">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="NewShow.html?id=62">游戏协议</a></p>
 <p>
 <table><tr><td style="width:150px;">&nbsp;</td><td>抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</br>
 &nbsp;2479游戏城&nbsp <a href="http://webscan.360.cn/index/checkwebsite/url/www.2479.com" name="d154991ab20438fd411c32b27b368a4c" >360网站安全检测平台</a></td><td>

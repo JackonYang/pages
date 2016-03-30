@@ -619,15 +619,15 @@ function AddMemberFavorite(title, url) {
 	//加入会员收藏夹的代码
 	//进度条
 	OpenStateBar("请稍候...");
-	var url = "/Members/UsersForm.aspx?params=addfavorite&title=" + encodeURIComponent(title) + "&url=" + encodeURIComponent(url) + "&x=" + Math.random();
+	var url = "/Members/UsersForm.html?params=addfavorite&title=" + encodeURIComponent(title) + "&url=" + encodeURIComponent(url) + "&x=" + Math.random();
 	$.get(
 		url,
 		function(data) {
 			if (data == "nologin") {
-				Msg(ERROR_MSG_ICON + '<p style="text-indent:2em;">您尚未登录，不能使用会员收藏夹，要收藏到浏览器中吗？<div style="text-align:center;">【<a href="javascript:HiddenState(\'Tranning\',500);AddFavorite(\'' + title + '\',\'' + url + '\');" title="收藏到浏览器">收藏</a>】&nbsp;&nbsp;【<a href="/Login.aspx" title="现在登录">现在登录</a>】</div></p>', 450);
+				Msg(ERROR_MSG_ICON + '<p style="text-indent:2em;">您尚未登录，不能使用会员收藏夹，要收藏到浏览器中吗？<div style="text-align:center;">【<a href="javascript:HiddenState(\'Tranning\',500);AddFavorite(\'' + title + '\',\'' + url + '\');" title="收藏到浏览器">收藏</a>】&nbsp;&nbsp;【<a href="/Login.html" title="现在登录">现在登录</a>】</div></p>', 450);
 			}
 			else if (data == "success") {
-				Msg(SUCCESS_MSG_ICON + '<p style="text-indent:2em;">已添加到您的商品收藏夹，您可以在个人中心再次查看这个商品，现在查看收藏夹吗？<div style="text-align:center;">【<a href="/Members/ProductsFavorite.aspx" title="进入会员收藏夹">是</a>】&nbsp;&nbsp;【<a href="javascript:HiddenState(\'Tranning\',500);">否</a>】</div></p>', 450);
+				Msg(SUCCESS_MSG_ICON + '<p style="text-indent:2em;">已添加到您的商品收藏夹，您可以在个人中心再次查看这个商品，现在查看收藏夹吗？<div style="text-align:center;">【<a href="/Members/ProductsFavorite.html" title="进入会员收藏夹">是</a>】&nbsp;&nbsp;【<a href="javascript:HiddenState(\'Tranning\',500);">否</a>】</div></p>', 450);
 			}
 			else {
 				Msg(ERROR_MSG_ICON + "错误：" + data, 300);
@@ -868,7 +868,7 @@ function TopLoginAction() {
 	if (CheckTopMemberLogin()) {
 		var btn = $("#spanTopLoginBtn").html();
 		$("#spanTopLoginBtn").html("<font color='#3794e2'>请稍候...</font>");
-		var url = "/Members/UsersForm.aspx?params=login&un=" + encodeURIComponent($("#txtTopLoginName").val()) + "&pwd=" + $("#txtTopLoginPwd").val();
+		var url = "/Members/UsersForm.html?params=login&un=" + encodeURIComponent($("#txtTopLoginName").val()) + "&pwd=" + $("#txtTopLoginPwd").val();
 		var msg = $.get(url, function(data) {
 			if (data != "登录成功") {
 				Msg(ERROR_MSG_ICON + "错误：" + data, 200);

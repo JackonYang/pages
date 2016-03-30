@@ -1,4 +1,4 @@
-<script>alert('请先登录!');window.location.href = '../Default.aspx';</script><script>alert('请先登录!');window.location.href = '../Default.aspx';</script>
+<script>alert('请先登录!');window.location.href = '../Default.html';</script><script>alert('请先登录!');window.location.href = '../Default.html';</script>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -121,7 +121,7 @@
             alert("昵称不能为空!");
             return;
         }
-        ajaxCheck("temp2.aspx?nicheng=" + escape(nicheng) + "&shengr=" + escape(shengr) + "&RealName=" + escape(RealName) + "&province=" + escape(province) + "&city=" + escape(city) + "&jiedao=" + escape(jiedao) + "&xingbie=" + xingbie + "&beizhu=" + escape(beizhu) + "", "", function (responsetext) {
+        ajaxCheck("temp2.html?nicheng=" + escape(nicheng) + "&shengr=" + escape(shengr) + "&RealName=" + escape(RealName) + "&province=" + escape(province) + "&city=" + escape(city) + "&jiedao=" + escape(jiedao) + "&xingbie=" + xingbie + "&beizhu=" + escape(beizhu) + "", "", function (responsetext) {
             if (responsetext == "OK") {
                 alert("保存成功!");
                 window.top.location.reload();
@@ -136,20 +136,20 @@
 
 </title></head>
 <body>
-    <form name="form1" method="post" action="UsersModification.aspx" id="form1">
+    <form name="form1" method="post" action="UsersModification.html" id="form1">
 <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY4MTMyNjgyOGRkRIrbrdBcnUUVHq+ZCFJ/CHk4QdXZo63mZ/nHWz17dO0=" />
 
      <div class="wrap">
 <div class="topbg">
 <div class="topw">
 
-<h1></br><a href="../Default.aspx"><img src="http://www.2479.com/upload/logo/2479logo.png" alt="【2479游戏城】_国内最大了游戏平台官方网站游戏平台" /></a></h1>
+<h1></br><a href="../Default.html"><img src="http://www.2479.com/upload/logo/2479logo.png" alt="【2479游戏城】_国内最大了游戏平台官方网站游戏平台" /></a></h1>
 
 
 <div class="topTagDiv" id="topLoginIn">
 <div id="denglu_div" style="display:block; color:#2A5DA9;"><a name="toptop" id="toptop"></a><a title="设为首页" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.biyinqp.com');" style="color:#2A5DA9;" href="javascript:;">设为首页</a>
-<a href="javascript:void(0)" style="color:#2A5DA9;" onclick="addfavorite()">收藏</a>&nbsp;&nbsp;&nbsp;&nbsp;您好，欢迎光临【2479游戏城】_国内最大了游戏平台官方网站  请 <a id="but" class="action-newtopic" href="javascript:;">登录</a> |   <a href="../Register.aspx">注册</a></div>
-<div id="dengluhou_div" style="display:none; color:#2A5DA9;"><a href="../UsersMembers.aspx"></a> 您好，欢迎光临【2479游戏城】_国内最大了游戏平台官方网站  | <a href="../Default.aspx?tid=1">退出</a></div>
+<a href="javascript:void(0)" style="color:#2A5DA9;" onclick="addfavorite()">收藏</a>&nbsp;&nbsp;&nbsp;&nbsp;您好，欢迎光临【2479游戏城】_国内最大了游戏平台官方网站  请 <a id="but" class="action-newtopic" href="javascript:;">登录</a> |   <a href="../Register.html">注册</a></div>
+<div id="dengluhou_div" style="display:none; color:#2A5DA9;"><a href="../UsersMembers.html"></a> 您好，欢迎光临【2479游戏城】_国内最大了游戏平台官方网站  | <a href="../Default.html?tid=1">退出</a></div>
 </div>
  
      <script type="text/javascript" src="js/Login.js"></script>
@@ -166,7 +166,7 @@
 </div>
 <script type="text/javascript">
     function SavDownLoad() {
-        ajaxCheck("../zt/20130715/temp.aspx?download=1", "", function (responsetext) {
+        ajaxCheck("../zt/20130715/temp.html?download=1", "", function (responsetext) {
             if (responsetext == "OK") {
                 //alert(responsetext);
             }
@@ -174,7 +174,7 @@
     }
 </script>
 <div id="dengluhou" class="menu_zc" style="background:url(../images/gerenzx.png); height:638px;">
-<div style="margin-top:60px; margin-left:10px; font-size:14px; height:25px;"><table><tr><td style="height:25px; width:140px;">欢迎您 <span style="color:#0000CC;"></span></td><td><a href="../Default.aspx?tid=1"><img src="../images/anquantuic1.png" onmouseup="this.src='../images/anquantuic2.png'" onmousedown="this.src='../images/anquantuic3.png'" onmouseout="this.src='../images/anquantuic1.png'" onmouseover="this.src='images/anquantuic2.png'"/></a></td></tr></table></div>
+<div style="margin-top:60px; margin-left:10px; font-size:14px; height:25px;"><table><tr><td style="height:25px; width:140px;">欢迎您 <span style="color:#0000CC;"></span></td><td><a href="../Default.html?tid=1"><img src="../images/anquantuic1.png" onmouseup="this.src='../images/anquantuic2.png'" onmousedown="this.src='../images/anquantuic3.png'" onmouseout="this.src='../images/anquantuic1.png'" onmouseover="this.src='images/anquantuic2.png'"/></a></td></tr></table></div>
 <div style="margin-top:5px; margin-left:10px; color:#2A5DA9;">
 <table>
 <tr><td style="width:75px;">
@@ -189,15 +189,15 @@
 </table>
 <div style="padding-top:5px;">
 <table style="width:100%; text-align:center; color:#2A5DA9;">
-<tr><td style="height:46px; font-size:14px;"><a href="../UsersMembers.aspx" style="color:#2A5DA9;">信息总览</a></td></tr>
-<tr><td style="height:46px; font-size:14px;"><a href="../UsersModification.aspx" style="color:#2A5DA9;">修改资料</a></td></tr>
-<tr><td style="height:46px; font-size:14px;"><a href="../Security.aspx" style="color:#2A5DA9;">账号安全</a></td></tr>
-<tr><td style="height:46px; font-size:14px;"><a href="../EditPassWord.aspx" style="color:#2A5DA9;">修改密码</a></td></tr>
-<tr><td style="height:46px; font-size:14px;"><a href="../EditBankPassWord.aspx" style="color:#2A5DA9;">修改口令</a></td></tr>
-<tr><td style="height:46px; font-size:14px;"><a href="../UserPayList.aspx" style="color:#2A5DA9;">充值记录</a></td></tr>
-<tr><td style="height:46px; font-size:14px;"><a href="../UserShopList.aspx" style="color:#2A5DA9;">兑换记录</a></td></tr>
-<tr><td style="height:46px; font-size:14px;"><a href="../UserTuiGame.aspx" style="color:#2A5DA9;">推广信息</a></td></tr>
-<tr><td style="height:46px; font-size:14px;"><a href="../FeedBack.aspx" style="color:#2A5DA9;">我要反馈</a></td></tr>
+<tr><td style="height:46px; font-size:14px;"><a href="../UsersMembers.html" style="color:#2A5DA9;">信息总览</a></td></tr>
+<tr><td style="height:46px; font-size:14px;"><a href="../UsersModification.html" style="color:#2A5DA9;">修改资料</a></td></tr>
+<tr><td style="height:46px; font-size:14px;"><a href="../Security.html" style="color:#2A5DA9;">账号安全</a></td></tr>
+<tr><td style="height:46px; font-size:14px;"><a href="../EditPassWord.html" style="color:#2A5DA9;">修改密码</a></td></tr>
+<tr><td style="height:46px; font-size:14px;"><a href="../EditBankPassWord.html" style="color:#2A5DA9;">修改口令</a></td></tr>
+<tr><td style="height:46px; font-size:14px;"><a href="../UserPayList.html" style="color:#2A5DA9;">充值记录</a></td></tr>
+<tr><td style="height:46px; font-size:14px;"><a href="../UserShopList.html" style="color:#2A5DA9;">兑换记录</a></td></tr>
+<tr><td style="height:46px; font-size:14px;"><a href="../UserTuiGame.html" style="color:#2A5DA9;">推广信息</a></td></tr>
+<tr><td style="height:46px; font-size:14px;"><a href="../FeedBack.html" style="color:#2A5DA9;">我要反馈</a></td></tr>
 </table>
 </div>
 </div>
@@ -210,18 +210,18 @@
 
 <div id="nav"><!--NAV BEGIN-->
 <ul>
-<li class="nav0"><a href="Default.aspx" target="_self" title="官方首页">官方首页</a></li>
-<li class="nav1"><a href="NewList.aspx?sid=1" target="_self" title="新闻动态">新闻动态</a></li>
-<li class="nav2"><a href="GameList.aspx" target="_self" title="游戏介绍">游戏介绍</a></li>
-<li class="nav3"><a href="../PayStypeList.aspx" target="_self" title="游戏论坛">帐号充值</a></li>
-<li class="nav4"><a href="JpShop.aspx" target="_self" title="奖品商城">奖品商城</a></li>
-<li class="nav5"><a href="HopeHome.aspx" target="_self" title="帮助中心">帮助中心</a></li>
+<li class="nav0"><a href="Default.html" target="_self" title="官方首页">官方首页</a></li>
+<li class="nav1"><a href="NewList.html?sid=1" target="_self" title="新闻动态">新闻动态</a></li>
+<li class="nav2"><a href="GameList.html" target="_self" title="游戏介绍">游戏介绍</a></li>
+<li class="nav3"><a href="../PayStypeList.html" target="_self" title="游戏论坛">帐号充值</a></li>
+<li class="nav4"><a href="JpShop.html" target="_self" title="奖品商城">奖品商城</a></li>
+<li class="nav5"><a href="HopeHome.html" target="_self" title="帮助中心">帮助中心</a></li>
 </ul>
 </div>
 <div style="margin-top:60px; height:50px; background:url(../images/top_beijingtu.png);">
 <table><tr><td>
 <div style="padding-top:10px; text-align:left; padding-left:30px; width:100px; float:left; color:#2A5DA9; font-size:16px; font-weight:bold;">修改资料</div>
-<div style="padding-top:10px; text-align:right; padding-right:30px; width:400px; float:right; color:#2A5DA9;">您当前的位置是&nbsp;:&nbsp;首页&nbsp;>&nbsp;<a href="UsersMembers.aspx" style="color:#2A5DA9;">个人中心</a>&nbsp;>&nbsp;修改资料</div>
+<div style="padding-top:10px; text-align:right; padding-right:30px; width:400px; float:right; color:#2A5DA9;">您当前的位置是&nbsp;:&nbsp;首页&nbsp;>&nbsp;<a href="UsersMembers.html" style="color:#2A5DA9;">个人中心</a>&nbsp;>&nbsp;修改资料</div>
 </td></tr><tr><td><div style="width:680px; height:10px; margin-left:16px; background:url(../images/xuxiankuangjia.jpg);"></div>
 </td></tr></table>
 </div>
@@ -279,7 +279,7 @@
 <div class="footerDiv">
 <div class="footer">
 <p>
-<a href="Register.aspx" target="_blank">首页注册</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.baidu.com">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="NewShow.aspx?id=62">游戏协议</a></p>
+<a href="Register.html" target="_blank">首页注册</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.baidu.com">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="NewShow.html?id=62">游戏协议</a></p>
 <p>
 <table><tr><td style="width:150px;">&nbsp;</td><td>抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</br>
 &nbsp;2479游戏城&nbsp <a href="http://webscan.360.cn/index/checkwebsite/url/www.2479.com" name="d154991ab20438fd411c32b27b368a4c" >360网站安全检测平台</a></td><td>

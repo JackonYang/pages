@@ -294,7 +294,7 @@ function butOnclick() {
         return;
     }
 
-    ajaxCheck("temp.aspx?name=" + name + "&password=" + password + "", "", function (responsetext) {
+    ajaxCheck("temp.html?name=" + name + "&password=" + password + "", "", function (responsetext) {
         if (responsetext == "OK") {
             document.getElementById("msgdiv").innerHTML = "登录成功!";
             window.top.location.reload();
@@ -320,7 +320,7 @@ function addfavorite() {
 var ib = 1;
 function reloadcode() {
     ib = ib + 1;
-    document.getElementById('showimg_img').src = "ShowIMG.aspx?xxx=" + ib + "";
+    document.getElementById('showimg_img').src = "ShowIMG.html?xxx=" + ib + "";
 }
 
 function setCookie(name, value) {
@@ -383,7 +383,7 @@ function ImgButtonOnclick() {
         deleteCookie("UserNameStr");
     }
 
-    ajaxCheck("../temp.aspx?name=" + name + "&password=" + password + "&yz=" + yanzhen + "", "", function (responsetext) {
+    ajaxCheck("../temp.html?name=" + name + "&password=" + password + "&yz=" + yanzhen + "", "", function (responsetext) {
       //  alert(responsetext);
         if (responsetext == "OK") {
             window.top.location.reload();
