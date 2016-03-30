@@ -4,24 +4,32 @@ import os
 import re
 
 
-def download(url, name):
+def request(url, name):
+    print 'downloading %s' % url
     r = requests.get(url)
-    print r.status_code
-    print r.encoding
+    content = r.text.encode(r.encoding or 'utf8')
     with open(name, 'wb') as f:
-        f.write(r.text.encode(r.encoding or 'utf8'))
+        f.write(content)
+    return content
 
 
-def download_rel(root, rel):
-    url = os.path.join(root, rel)
+def download_page(url, name):
+    c = request(url, name)  # html
 
-    rel = os.path.join('public', rel)
-    if rel.find('?') != -1:
-        name = rel[:rel.find('?')]
-    else:
-        name = rel
-    print url, name
-    download(url, name)
+    links = find_css(c) + find_js(c)
+
+    for link in links:
+        link_url = os.path.join(url, link)
+
+        name = os.path.join('public', link)
+        if name.find('?') != -1:
+            name = name[:name.find('?')]
+        dirname = os.path.dirname(name)
+        if not os.path.exists(dirname):
+            print 'mkdir -p %s' % dirname
+            os.makedirs(dirname)
+
+        request(link_url, name)
 
 
 def find_css(content):
@@ -40,17 +48,6 @@ if __name__ == '__main__':
     if not os.path.exists(path):
         os.makedirs(path)
 
-    # download home page
+    # request home page
     home_name = os.path.join(path, 'index.html')
-    # download(url_home, home_name)
-
-    with open(home_name, 'rb') as f:
-        c = ''.join(f.readlines())
-
-    links = find_css(c)
-    for link in links:
-        download_rel(url_home, link)
-
-    links = find_js(c)
-    for link in links:
-        download_rel(url_home, link)
+    download_page(url_home, home_name)
