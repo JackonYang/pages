@@ -5,6 +5,10 @@ import re
 
 
 def request(url, name):
+    if os.path.exists(name):
+        print 'ignore %s' % url
+        return
+
     print 'downloading %s' % url
     r = requests.get(url)
     content = r.text.encode(r.encoding or 'utf8')
@@ -15,6 +19,9 @@ def request(url, name):
 
 def download_page(url, name):
     c = request(url, name)  # html
+
+    if c is None:
+        return
 
     links = find_css(c) + find_js(c)
 
@@ -33,12 +40,12 @@ def download_page(url, name):
 
 
 def find_css(content):
-    ptn = re.compile(r'<link[^>]+href="([^"]+)"[^>]+\/>')
+    ptn = re.compile(r'<link [^>]*href="([^"]+)"[^>]*>')
     return ptn.findall(content)
 
 
 def find_js(content):
-    ptn = re.compile(r'<script type="text/javascript" src="([^"]+)">')
+    ptn = re.compile(r'<script [^>]*src="([^"]+)"[^>]*>')
     return ptn.findall(content)
 
 
