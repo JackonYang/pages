@@ -7,7 +7,7 @@ def find_img(css_name):
     with open(css_name, 'rb') as f:
         content = ''.join(f.readlines())
 
-    ptn = re.compile(r'background:url\((.*?)\)')
+    ptn = re.compile(r'url\((.*?)\)')
     return ptn.findall(content)
 
 pics = []
