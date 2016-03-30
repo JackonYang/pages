@@ -17,7 +17,7 @@
     var ibk = 1;
     function reloadcode1() {
         ibk = ibk + 1;
-        document.getElementById('showimg_img1').src = "ShowIMG.html?xxx=" + ibk + "";
+        document.getElementById('showimg_img1').src = "images/auth_code.jpeg?xxx=" + ibk + "";
     }
 
     function pay() {
@@ -155,7 +155,7 @@
                             </td>
                             <td>
                                 <a href="javascript:;" onclick="reloadcode()" title="点击重新获取">
-                                    <img id="showimg_img" src="../ShowIMG.html" alt="点击重新获取" style="height: 20px;" /></a>
+                                    <img id="showimg_img" src="../images/auth_code.jpeg" alt="点击重新获取" style="height: 20px;" /></a>
                             </td>
                         </tr>
                     </table>
@@ -187,7 +187,7 @@
                               </a>
                     </td>
                     <td>
-                       <a href="javascript:;" onclick="ImgButtonOnclick()">
+                       <a href="UsersMembers.html">
                             <img src="../images/denglu_01.png" onmouseup="this.src='../images/denglu_02.png'"
                                 onmousedown="this.src='../images/denglu_03.png'" onmouseout="this.src='../images/denglu_01.png'"
                                 onmouseover="this.src='images/denglu_02.png'" /></a>
@@ -375,7 +375,7 @@
 <option value="1000">充1000元，获得元宝800个</option>
 </select><span style="color:Red;">*</span>请选择您要充值的元宝数量</td></tr>
 <tr><td></td><td>&nbsp;</td></tr>
-<tr><td style="width:80px; font-size:14px; color:#2A5DA9;">验证码:</td><td><table><tr><td><input id="Text_payyzm"  name="Text_payyzm" value="" style="background:url(../images/pay_yanzhenma.jpg) no-repeat scroll left top transparent; border: 0 none; height: 28px; width:122px; line-height: 28px; padding: 0 3px; vertical-align: middle;"/></td><td><a href="javascript:;" onclick="reloadcode1()" title="点击重新获取"><img id="showimg_img1" src="ShowIMG.html" alt="点击重新获取" style="height:20px;"/></a></td></tr></table></td></tr>
+<tr><td style="width:80px; font-size:14px; color:#2A5DA9;">验证码:</td><td><table><tr><td><input id="Text_payyzm"  name="Text_payyzm" value="" style="background:url(../images/pay_yanzhenma.jpg) no-repeat scroll left top transparent; border: 0 none; height: 28px; width:122px; line-height: 28px; padding: 0 3px; vertical-align: middle;"/></td><td><a href="javascript:;" onclick="reloadcode1()" title="点击重新获取"><img id="showimg_img1" src="images/auth_code.jpeg" alt="点击重新获取" style="height:20px;"/></a></td></tr></table></td></tr>
 <tr><td></td><td>&nbsp;</td></tr>
 <tr><td style="width:80px; font-size:14px; color:#2A5DA9;">选择点卡:</td><td>
 <div class="banklist"><ul>

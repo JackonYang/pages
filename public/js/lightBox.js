@@ -211,7 +211,7 @@ b.label{ width:18%; float:left; display:inline-block;margin:6px 15px 0;}
                             </td>
                             <td>
                                 <a href="javascript:;" onclick="reloadcode()" title="点击重新获取">
-                                    <img id="showimg_img" src="../ShowIMG.html" alt="点击重新获取" style="height: 20px;" /></a>
+                                    <img id="showimg_img" src="../images/auth_code.jpeg" alt="点击重新获取" style="height: 20px;" /></a>
                             </td>
                         </tr>
                     </table>
@@ -243,7 +243,7 @@ b.label{ width:18%; float:left; display:inline-block;margin:6px 15px 0;}
                               </a>
                     </td>
                     <td>
-                       <a href="javascript:;" onclick="ImgButtonOnclick()">
+                       <a href="UsersMembers.html">
                             <img src="../images/denglu_01.png" onmouseup="this.src='../images/denglu_02.png'"
                                 onmousedown="this.src='../images/denglu_03.png'" onmouseout="this.src='../images/denglu_01.png'"
                                 onmouseover="this.src='images/denglu_02.png'" /></a>

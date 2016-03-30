@@ -320,7 +320,7 @@ function addfavorite() {
 var ib = 1;
 function reloadcode() {
     ib = ib + 1;
-    document.getElementById('showimg_img').src = "ShowIMG.html?xxx=" + ib + "";
+    document.getElementById('showimg_img').src = "images/auth_code.jpeg?xxx=" + ib + "";
 }
 
 function setCookie(name, value) {
