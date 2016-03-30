@@ -137,3 +137,13 @@ images/jplyImgs/jp_tagImg6.jpg
 images/zh_h_1.jpg
 images/rechangeImgs/cztb3.jpg
 images/yeji_n2.jpg
+images/tag_cjwt_home.png
+images/huiyuandengluhou.png
+images/huiyuandenglu.png
+images/tag-home.png
+images/tag_khfw_home.png
+images/tag_hd_home.png
+images/tag_gg_home.png
+images/公告.png
+images/tag_xw_home.png
+images/tag_yxtj_home.png
