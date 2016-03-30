@@ -37,7 +37,8 @@ def download_page(url, name):
     c = request(url, name)  # html
 
     if c is None:
-        return
+        with open(name, 'rb') as f:
+            c = ''.join(f.readlines())
 
     links = find_css(c) + find_js(c)
 
