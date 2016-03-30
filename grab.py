@@ -110,6 +110,11 @@ if __name__ == '__main__':
     # home_name = os.path.join(path, 'index.html')
     # download_page(url_home, home_name)
 
-    url = 'http://2479.com/HopeHome.aspx'
-    name = os.path.join(path, 'HopeHome.html')
-    download_page(url, name)
+    with open('page_urls.txt', 'rb') as f:
+        for line in f.readlines():
+            key = line.strip()
+            if not key:
+                continue
+            url = 'http://2479.com/%s.aspx' % key
+            name = os.path.join(path, '%s.html' % key)
+            download_page(url, name)
