@@ -254,7 +254,7 @@
 <table><tr>
 <td><textarea id="txtSignature"  rows="7" cols="60" style="background-color: #FFFFFF;border: 1px solid #2A5DA9;" name="txtSignature" type="text"></textarea></td></tr>
 <tr>
-<td style="text-align:center;"></br><img onclick='onclickSvem()' src="../Images/xiugaicg1.png" onmouseup="this.src='../images/xiugaicg2.png'" onmousedown="this.src='../images/xiugaicg3.png'" onmouseout="this.src='../images/xiugaicg2.png'" onmouseover="this.src='images/xiugaicg1.png'"/></td></tr></table>
+<td style="text-align:center;"></br><img onclick='onclickSvem()' src="../images/xiugaicg1.png" onmouseup="this.src='../images/xiugaicg2.png'" onmousedown="this.src='../images/xiugaicg3.png'" onmouseout="this.src='../images/xiugaicg2.png'" onmouseover="this.src='images/xiugaicg1.png'"/></td></tr></table>
 </div>
 </div>
 </div>

@@ -351,8 +351,8 @@
 <div class="tags_contentnew"> 
 <div style="margin-top:10px; margin-left:20px;"><table style="font-size:16px; color:#2A5DA9; font-weight:bold;">
 <tr>
-<td style="width:170px;"><table><tr><td><img src="Images/pay_chongzhishuoming_1.png" /></td><td>选择充值方式</td></tr></table></td><td style="width:170px;"><table><tr><td><img src="Images/pay_chongzhishuoming_2.png" /></td><td  style="color:Red;">填写充值信息</td></tr></table></td>
-<td style="width:170px;"><table><tr><td><img src="Images/pay_chongzhishuoming_3.png" /></td><td>充值付款</td></tr></table></td><td style="width:170px;"><table><tr><td><img src="Images/pay_chongzhishuoming_4.png" /></td><td>充值成功</td></tr></table></td>
+<td style="width:170px;"><table><tr><td><img src="images/pay_chongzhishuoming_1.png" /></td><td>选择充值方式</td></tr></table></td><td style="width:170px;"><table><tr><td><img src="images/pay_chongzhishuoming_2.png" /></td><td  style="color:Red;">填写充值信息</td></tr></table></td>
+<td style="width:170px;"><table><tr><td><img src="images/pay_chongzhishuoming_3.png" /></td><td>充值付款</td></tr></table></td><td style="width:170px;"><table><tr><td><img src="images/pay_chongzhishuoming_4.png" /></td><td>充值成功</td></tr></table></td>
 </tr></table></div>
 </div>
 <div style="margin-left:20px;"><span style="color:Red;">温馨提示:</span>&nbsp;&nbsp; 充值成功后,系统将在10分钟内将元宝存入您的账户,请您登录个人中心查看!</div>
@@ -379,17 +379,17 @@
 <tr><td></td><td>&nbsp;</td></tr>
 <tr><td style="width:80px; font-size:14px; color:#2A5DA9;">选择点卡:</td><td>
 <div class="banklist"><ul>
-		<li style="width:130px; height:30px; float:left;"><input id="ICBC-NET" type="radio" checked="checked"  name="rtype" value="ZHENGTU" /><label for="ICBC-NET"><img align="absmiddle" src="Images/czdk_1.gif" width="100" height="24" alt="巨人网络" border="0" /><b title="巨人网络"></b></label>
+		<li style="width:130px; height:30px; float:left;"><input id="ICBC-NET" type="radio" checked="checked"  name="rtype" value="ZHENGTU" /><label for="ICBC-NET"><img align="absmiddle" src="images/czdk_1.gif" width="100" height="24" alt="巨人网络" border="0" /><b title="巨人网络"></b></label>
 		</li>
-    <li  style="width:130px; height:30px; float:left;"><input id="ABC-NET" type="radio" name="rtype" value="JUNNET" /><label for="ABC-NET"><img align="absmiddle" src="Images/czdk_2.gif" width="100" height="24" alt="骏卡" border="0" /><b title="骏卡"></b></label>
+    <li  style="width:130px; height:30px; float:left;"><input id="ABC-NET" type="radio" name="rtype" value="JUNNET" /><label for="ABC-NET"><img align="absmiddle" src="images/czdk_2.gif" width="100" height="24" alt="骏卡" border="0" /><b title="骏卡"></b></label>
     </li>
-  <li style="width:130px; height:30px; float:left;"><input id="CCB-NET" type="radio" name="rtype" value="UNICOM" /><label for="CCB-NET"><img align="absmiddle" src="Images/czdk_3.gif"  width="100" height="24"  alt="联通充值卡" border="0" /><b title="联通充值卡"></b></label>
+  <li style="width:130px; height:30px; float:left;"><input id="CCB-NET" type="radio" name="rtype" value="UNICOM" /><label for="CCB-NET"><img align="absmiddle" src="images/czdk_3.gif"  width="100" height="24"  alt="联通充值卡" border="0" /><b title="联通充值卡"></b></label>
   </li>
-  <li style="width:130px; height:30px; float:left;"><input id="BOC-NET" type="radio" name="rtype" value="SNDACARD" /><label for="BOC-NET"><img align="absmiddle" src="Images/czdk_4.gif"  width="100" height="24"  alt="盛大游戏卡" border="0" /><b title="盛大游戏卡"></b></label>
+  <li style="width:130px; height:30px; float:left;"><input id="BOC-NET" type="radio" name="rtype" value="SNDACARD" /><label for="BOC-NET"><img align="absmiddle" src="images/czdk_4.gif"  width="100" height="24"  alt="盛大游戏卡" border="0" /><b title="盛大游戏卡"></b></label>
   </li>
-  <li style="width:130px; height:30px; float:left;"><input id="CMBCHINA-NET" type="radio" name="rtype" value="SZX" /><label for="CMBCHINA-NET"><img align="absmiddle" src="Images/czdk_5.gif" width="100" height="24" alt="移动充值卡" border="0" /><b title="移动充值卡"></b></label>
+  <li style="width:130px; height:30px; float:left;"><input id="CMBCHINA-NET" type="radio" name="rtype" value="SZX" /><label for="CMBCHINA-NET"><img align="absmiddle" src="images/czdk_5.gif" width="100" height="24" alt="移动充值卡" border="0" /><b title="移动充值卡"></b></label>
   </li>
-  <li style="width:130px; height:30px; float:left;"><input id="CMBC-NET" type="radio" name="rtype" value="QQCARD" /><label for="CMBC-NET"><img align="absmiddle" src="Images/czdk_6.gif" width="100" height="24"  alt="Q币卡" border="0" /><b title="Q币卡"></b></label>
+  <li style="width:130px; height:30px; float:left;"><input id="CMBC-NET" type="radio" name="rtype" value="QQCARD" /><label for="CMBC-NET"><img align="absmiddle" src="images/czdk_6.gif" width="100" height="24"  alt="Q币卡" border="0" /><b title="Q币卡"></b></label>
   </li>
    
     <li style="width:330px; height:30px; float:left;"><input id="Radio1" type="radio" name="rtype" value="10000" />其它点卡
@@ -408,8 +408,8 @@
 	</ul></div>
 </td></tr>
 </table>
-<div id="div_show1" style="text-align:center; height:100px; margin-top:22px;"><img onclick="pay();" src="Images/lijichongz1.png" onmouseup="this.src='../images/lijichongz2.png'" onmousedown="this.src='../images/lijichongz3.png'" onmouseout="this.src='../images/lijichongz1.png'" onmouseover="this.src='images/lijichongz2.png'"/></div>
-<div id="div_show2" style="text-align:center; height:100px; margin-top:22px; display:none;"><img src="Images/lijichongz1.png"/></div>
+<div id="div_show1" style="text-align:center; height:100px; margin-top:22px;"><img onclick="pay();" src="images/lijichongz1.png" onmouseup="this.src='../images/lijichongz2.png'" onmousedown="this.src='../images/lijichongz3.png'" onmouseout="this.src='../images/lijichongz1.png'" onmouseover="this.src='images/lijichongz2.png'"/></div>
+<div id="div_show2" style="text-align:center; height:100px; margin-top:22px; display:none;"><img src="images/lijichongz1.png"/></div>
 </div>
 </div>
 </div>

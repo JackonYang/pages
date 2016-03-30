@@ -247,7 +247,7 @@ function CreateStateDiv(divID) {
 	with (div.style) {
 		fontSize = "12px";
 		color = "#000";
-		background = "url(/Images/System/D_bg.gif) repeat-x left top";
+		background = "url(/images/System/D_bg.gif) repeat-x left top";
 		border = "1px solid #99bfd8";
 		position = "absolute";
 		zIndex = "100000";
@@ -351,13 +351,13 @@ function Msg(text, width) {
 
     var content = '<div style="color: #153c64; font-weight: bold; font-size: 14px; padding: 7px 0 0 12px;cursor:move;" onmouseover="DivMove(\'Tranning\');">';
     content += '<span style="position: absolute; top: 4px; right: 5px;">';
-    content += '<img src="/Images/System/d_close.gif" width="21" height="19" style="border: 0;cursor:pointer;" title="关闭" alt="关闭" onclick="HiddenState(\'Mask\', 1);HiddenState(\'Tranning\',200);" /></span>';
+    content += '<img src="/images/System/d_close.gif" width="21" height="19" style="border: 0;cursor:pointer;" title="关闭" alt="关闭" onclick="HiddenState(\'Mask\', 1);HiddenState(\'Tranning\',200);" /></span>';
     content += '网页对话框</div>';
     content += '<div style="padding: 25px; line-height: 24px;">';
     content += text;
     content += '</div>';
-    content += '<div style="height: 27px; background: url(/Images/System/d_bottom.gif) repeat-x left top; border-top: 1px solid #e1e1e1; text-align: center; padding-top: 4px;">';
-    content += '<img src="/Images/System/d_btn.gif" style="border:0;cursor:pointer;" title="关闭" alt="关闭" onclick="HiddenState(\'Mask\', 1);HiddenState(\'Tranning\',200);" />';
+    content += '<div style="height: 27px; background: url(/images/System/d_bottom.gif) repeat-x left top; border-top: 1px solid #e1e1e1; text-align: center; padding-top: 4px;">';
+    content += '<img src="/images/System/d_btn.gif" style="border:0;cursor:pointer;" title="关闭" alt="关闭" onclick="HiddenState(\'Mask\', 1);HiddenState(\'Tranning\',200);" />';
     content += '</div>';
 
     $(state).css("display", "inline");
@@ -701,12 +701,12 @@ function CopyToClipboardNonAlert(str) {
 /*****************************************************
 表单验证
 *****************************************************/
-//var ERROR_MSG_ICON="<img src='/Images/System/smallerror.gif' align='absmiddle' width='32' height='32' />&nbsp;";
-var ERROR_MSG_ICON = "<img src='/Images/System/053753112.gif' align='absmiddle' width='16' height='16' />&nbsp;";
-var LOADING_ICON = "<img src='/Images/System/smallloading.gif' align='absmiddle' width='16' height='16' />&nbsp;";
-var INFO_MSG_ICON = "<img src='/Images/System/no.jpg' align='absmiddle' width='32' height='32' />&nbsp;";
-//var SUCCESS_MSG_ICON = "<img src='/Images/System/ORB_Icons_by_014.png' align='absmiddle' width='32' height='32' />&nbsp;";
-var SUCCESS_MSG_ICON = "<img src='/Images/System/053753200.gif' align='absmiddle' width='16' height='16' />&nbsp;";
+//var ERROR_MSG_ICON="<img src='/images/System/smallerror.gif' align='absmiddle' width='32' height='32' />&nbsp;";
+var ERROR_MSG_ICON = "<img src='/images/System/053753112.gif' align='absmiddle' width='16' height='16' />&nbsp;";
+var LOADING_ICON = "<img src='/images/System/smallloading.gif' align='absmiddle' width='16' height='16' />&nbsp;";
+var INFO_MSG_ICON = "<img src='/images/System/no.jpg' align='absmiddle' width='32' height='32' />&nbsp;";
+//var SUCCESS_MSG_ICON = "<img src='/images/System/ORB_Icons_by_014.png' align='absmiddle' width='32' height='32' />&nbsp;";
+var SUCCESS_MSG_ICON = "<img src='/images/System/053753200.gif' align='absmiddle' width='16' height='16' />&nbsp;";
 function CK_HtmlControl() {
 	this.Message = ""; //错误信息容器
 	this.Postfix = "<br />"; //错误信息后缀
@@ -956,7 +956,7 @@ function InitFloatService(objseltor) {
 						if (type.toLowerCase() == "msn") {
 							href.attr("href", "msnim:chat?contact=" + sn);
 							href.attr("title", title);
-							img.attr("src", "/Images/msn_online.gif");
+							img.attr("src", "/images/msn_online.gif");
 						}
 						else {
 							href.attr("href", "http://wpa.qq.com/msgrd?V=1&Uin=" + sn + "&Site=" + location.host);

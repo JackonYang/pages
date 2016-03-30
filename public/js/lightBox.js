@@ -25,16 +25,16 @@ b.label{ width:18%; float:left; display:inline-block;margin:6px 15px 0;}
 .headerR,.FooterR,.BodyR{ float:left;width:20px; }
 .headerL,.FooterL,.BodyL{ float:left;}
 
-.headerR{background:url(Images/lightbox-header.png) no-repeat right 0; height:46px;}
-.headerL{background:url(Images/lightbox-header.png) no-repeat left 0; height:46px;padding:0 0 0 20px;}
+.headerR{background:url(images/lightbox-header.png) no-repeat right 0; height:46px;}
+.headerL{background:url(images/lightbox-header.png) no-repeat left 0; height:46px;padding:0 0 0 20px;}
 
-.FooterR{background:url(Images/lightbox-footer.png) no-repeat right 0;height:59px;}
-.FooterL{background:url(Images/lightbox-footer.png) no-repeat left 0;height:39px;padding:10px 0 10px 20px;}
+.FooterR{background:url(images/lightbox-footer.png) no-repeat right 0;height:59px;}
+.FooterL{background:url(images/lightbox-footer.png) no-repeat left 0;height:39px;padding:10px 0 10px 20px;}
 
 
 
-.BodyL{background:url(Images/lightbox-body.png) repeat-y left 0;padding:10px 0 10px 20px;}
-.BodyR{background:url(Images/lightbox-body.png) repeat-y right 0;}
+.BodyL{background:url(images/lightbox-body.png) repeat-y left 0;padding:10px 0 10px 20px;}
+.BodyR{background:url(images/lightbox-body.png) repeat-y right 0;}
 
 .BoxMask{ height:100%; width:100%;left:0; top:0; background:#000;opacity:0.25;filter:alpha(opacity=25);}
 
@@ -53,8 +53,8 @@ b.label{ width:18%; float:left; display:inline-block;margin:6px 15px 0;}
     var footerhtml6 = '<span style="float:right;color:#FFcccc;position:relative;display:block;width:100px;">Copyright 2009<span style="color:#333;position:absolute;left:-1px;top:-1px;">Copyright 2009</span>';
 
 
-    var footerhtml4 = '<input type="image" alt="Cancel" src="Images/send_button.gif" class="btn" onclick=alert("Sumbited!"); />';
-    footerhtml4 += '<input type="image" alt="Cancel" src="Images/cancel_button.gif" class="btn" id="msg4cancel" />';
+    var footerhtml4 = '<input type="image" alt="Cancel" src="images/send_button.gif" class="btn" onclick=alert("Sumbited!"); />';
+    footerhtml4 += '<input type="image" alt="Cancel" src="images/cancel_button.gif" class="btn" id="msg4cancel" />';
     var footerhtml3 = '<input type="image" alt="Cancel" src="cancel_button.gif" class="btn" id="msg3cancel" />';
     var footerhtml2 = '<input type="image" alt="Cancel" src="cancel_button.gif" class="btn" id="msg2cancel" />';
     var footerhtml1 = '<input type="image" alt="Cancel" src="cancel_button.gif" class="btn" id="msg1cancel" />';	
