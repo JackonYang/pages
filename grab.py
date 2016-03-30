@@ -110,6 +110,6 @@ if __name__ == '__main__':
     # home_name = os.path.join(path, 'index.html')
     # download_page(url_home, home_name)
 
-    url = 'http://2479.com/Default.aspx'
-    name = os.path.join(path, 'Default.aspx')
+    url = 'http://2479.com/HopeHome.aspx'
+    name = os.path.join(path, 'HopeHome.html')
     download_page(url, name)

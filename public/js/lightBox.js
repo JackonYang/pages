@@ -1,12 +1,12 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" >
-<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head id="Head1"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="shortcut icon" type="image/x-icon" href="../ICON4.ico" media="screen" />
 <title>【2479游戏城】_国内最大了游戏平台官方网站游戏平台</title>
 <meta name="Keywords" content="游戏城,游戏平台,斗地主,鱼王争霸,捕鱼达人Ⅱ,飞禽走兽,连环夺宝,碰碰车,百人牛牛,欢乐30秒,四人牛牛,二人牛牛,智勇三张 ,通比牛牛,炸金花,麻将" />
 <meta name="Description" content="2479游戏城是目前国内专业网络棋牌游戏平台,提供电子游戏,电子游艺,斗地主,鱼王争霸,捕鱼达人Ⅱ,飞禽走兽,连环夺宝,碰碰车,百人牛牛,欢乐30秒,四人牛牛,二人牛牛,智勇三张 ,通比牛牛,炸金花,麻将等游戏.更多精彩尽在2479游戏城" />
-<meta name="CopyRight" content="2479游戏城" /><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" media="screen" /><link href="Css/style.css?v=2013" type="text/css" rel="Stylesheet" /><link href="Css/style_tck.css?v=2013" type="text/css" rel="Stylesheet" /><link href="Css/sepage.css?v=2013" type="text/css" rel="Stylesheet" />
+<meta name="CopyRight" content="2479游戏城" /><link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" media="screen" /><link href="../../Css/style.css?v=2013" type="text/css" rel="Stylesheet" /><link href="../../Css/style_tck.css?v=2013" type="text/css" rel="Stylesheet" /><link href="../../Css/sepage.css?v=2013" type="text/css" rel="Stylesheet" />
 <script type="text/javascript" src="js/jquery.js?v=2013"></script>
 <script type="text/javascript" src="js/public.js?v=2013"></script>
 <script type="text/javascript" src="js/marquee.js?v=2013"></script>
@@ -14,54 +14,142 @@
 <script type="text/javascript" src="js/q_ma_ajax.js?v=2013"></script>
 <script src="js/jquery.sliderkit.1.6.min.js?v=2013" type="text/javascript"></script>
 <script src="js/jquery.easing.1.3.js?v=2013" type="text/javascript"></script>
-<script type="text/javascript">
-    jQuery(window).load(function () {
-        jQuery(".photoslider-bullets").sliderkit({
-            auto: true,
-            circular: true,
-            mousewheel: false,
-            shownavitems: 4,
-            panelfx: "fading",
-            panelfxspeed: 3500,
-            panelfxeasing: "easeOutExpo" // "easeOutExpo", "easeInOutExpo", etc.
-        });
+<script type="text/javascript" src="js/lightBox.js?v=2013"></script>
+<style type="text/css">
+.row{ margin:5px 0;}
+input.input,textarea{ padding:5px; border:solid 1px #bbb; width:70%;font:normal 12px/150% Arial, Helvetica, sans-serif;}
+textarea{ height:80px;}
+b.label{ width:18%; float:left; display:inline-block;margin:6px 15px 0;}
+.Boxheader,.Boxfooter,.Boxbody{ position:relative;}
 
-        jQuery("#news > div.classTags > a").mouseover(function () {
-            if (this.id == "a_1") {
-                document.getElementById("news").style.backgroundImage = "url(images/tag_gg_home.png)";
+.headerR,.FooterR,.BodyR{ float:left;width:20px; }
+.headerL,.FooterL,.BodyL{ float:left;}
+
+.headerR{background:url(Images/lightbox-header.png) no-repeat right 0; height:46px;}
+.headerL{background:url(Images/lightbox-header.png) no-repeat left 0; height:46px;padding:0 0 0 20px;}
+
+.FooterR{background:url(Images/lightbox-footer.png) no-repeat right 0;height:59px;}
+.FooterL{background:url(Images/lightbox-footer.png) no-repeat left 0;height:39px;padding:10px 0 10px 20px;}
+
+
+
+.BodyL{background:url(Images/lightbox-body.png) repeat-y left 0;padding:10px 0 10px 20px;}
+.BodyR{background:url(Images/lightbox-body.png) repeat-y right 0;}
+
+.BoxMask{ height:100%; width:100%;left:0; top:0; background:#000;opacity:0.25;filter:alpha(opacity=25);}
+
+.Boxfooter{height:59px; }
+.Boxbody{overflow:hidden;}
+.Boxheader{ height:46px;cursor:move; }
+.Boxfooter .btn{ display:inline-block; float:right; margin:10px 10px 0 0;}
+</style>
+<script type="text/javascript">
+    var html1 = '<h3><a href="http://www.52cpp.com">www.52cpp.com</a></h3><p><img src="http://www.52cpp.com/THEMES/Vista/STYLE/images/M-bg.jpg" border=0 /></p>';
+    var html2 = '<div class="row"><b class="label"><font color="red">*</font>Your Email:</b><input type="text" value="abc" class="input" /></div>';
+    html2 += '<div class="row"><b class="label"><font color="red">*</font>Subject:</b><input type="text" value=" Work at Home: Real Work, Real Pay!" class="input" /></div>';
+    html2 += '<div class="row"><b class="label"><font color="red">*</font>Message:</b><textarea wrap="soft"></textarea></div>';
+    var html3 = '<iframe src="http://www.baidu.com/" width=800 height=400 frameborder="0"></iframe>';
+    var html6 = '<iframe src="http://bj.58.com/" width=800 height=400 frameborder="0"></iframe>';
+    var footerhtml6 = '<span style="float:right;color:#FFcccc;position:relative;display:block;width:100px;">Copyright 2009<span style="color:#333;position:absolute;left:-1px;top:-1px;">Copyright 2009</span>';
+
+
+    var footerhtml4 = '<input type="image" alt="Cancel" src="Images/send_button.gif" class="btn" onclick=alert("Sumbited!"); />';
+    footerhtml4 += '<input type="image" alt="Cancel" src="Images/cancel_button.gif" class="btn" id="msg4cancel" />';
+    var footerhtml3 = '<input type="image" alt="Cancel" src="cancel_button.gif" class="btn" id="msg3cancel" />';
+    var footerhtml2 = '<input type="image" alt="Cancel" src="cancel_button.gif" class="btn" id="msg2cancel" />';
+    var footerhtml1 = '<input type="image" alt="Cancel" src="cancel_button.gif" class="btn" id="msg1cancel" />';	
+</script>
+<script type="text/javascript">
+    function ProImgShow(pid,price,Number,image,prizetype,prizeName) {
+        var userid = -1;
+        var prinumber = "0";
+        if(userid < 0)
+        {
+          alert("请先登录才能兑换!");
+          return;
+        }
+        //Box("msg5", 10, 10, "", "",Number,image,prizetype,prizeName,10,pid,price);
+        ajaxCheck("temp1.aspx?price="+ price +"&ld="+prizetype+"&Number="+Number, "", function (responsetext) {
+            if (responsetext == "NO") {
+                prinumber = 1;
+                Box("msg5", 10, 10, "", "",Number,image,prizetype,prizeName,prinumber,pid,price);
             }
-            if (this.id == "a_2") {
-                document.getElementById("news").style.backgroundImage = "url(images/tag_xw_home.png)";
+               else 
+             {
+               alert(responsetext);
+               return;
+              
             }
-//            if (this.id == "a_3") {
-//                document.getElementById("news").style.backgroundImage = "url(images/tag_hd_home.png)"; 
-//            }
-            jQuery(this).parent().children().removeClass("tag_new");
-            jQuery("#news > div.classTags > a:not(:last)").addClass("tag_new");
-            jQuery(this).addClass("tag_new");
-            jQuery("#news > div:not(:first):visible").hide();
-            jQuery("#news > div:not(:first)").eq(jQuery(this).index()).show();
-        });
-    });	
+            
+         
+          
+
+        })
+    }
+
+    function ProCount(dj)
+    {
+      var shuliang = document.getElementById("txt_Num").value;
+      if(parseInt(shuliang) < 1)
+      {
+        shuliang = 1;
+        document.getElementById("txt_Num").value = 1;
+      }
+     var zonghe = parseInt(dj)*parseInt(shuliang);
+     document.getElementById("span_number").innerHTML = zonghe;
+    }
+
+    function onclickSvem(prinumber,dj,price)
+    {
+      var pid = document.getElementById("txt_ProID").value;
+
+      var shuliang = document.getElementById("txt_Num").value;
+      var zonghe = document.getElementById("span_number").innerHTML; 
+
+      var RealName = document.getElementById("Username").value;
+      var CallTel = document.getElementById("CallTel").value;
+      var UserAddress = document.getElementById("Adddizi").value;
+
+      if(parseInt(prinumber) < parseInt(zonghe))
+      {
+        alert("您的该奖品奖券数量不够!");
+        return;
+      }
+      if(RealName=="" || CallTel == "" || UserAddress =="")
+      {
+        alert("请输入必要信息!");
+        return;
+      }
+
+      ajaxCheck("temp1.aspx?pid="+ pid +"&shuliang="+ shuliang +"&danjia="+ dj +"&RealName="+ escape(RealName) +"&CallTel="+ CallTel +"&UserAddress="+ escape(UserAddress) +"&price1="+price+"", "", function (responsetext) {
+            if (responsetext == "ok") {
+                alert("兑换成功!");
+                window.location.href="UserShopList.aspx";
+            }
+            else {
+              alert(responsetext);
+            }
+        })
+    }
 </script>
 <title>
 
 </title></head>
 <body>
-    <form name="form1" method="post" action="" id="form1">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjAzOTcxMjM0MA9kFgICAw9kFgICBA8WAh4LXyFJdGVtQ291bnQCBRYKZg9kFgJmDxUHAzUwMQzlpLrlrp3muLjmiI8+L1VwbG9hZGZpbGUvaW1hZ2UvQjIwMTU0OTE4MzYxMzE0QjIwMTQxMjE5OTIyMjc3NzdsaWFuaHVhbi5wbmcM5aS65a6d5ri45oiPAzUwMQzlpLrlrp3muLjmiI8M5aS65a6d5ri45oiPZAIBD2QWAmYPFQcDOTk5DOmxvOeOi+S6iemcuDMvVXBsb2FkZmlsZS9pbWFnZS9CMjAxNDExMTkxMDE1NzY3Mea4lOeOi+S6iemcuC5wbmcM6bG8546L5LqJ6Zy4Azk5OQzpsbznjovkuonpnLgM6bG8546L5LqJ6Zy4ZAICD2QWAmYPFQcEMTAwMA/mjZXpsbzovr7kurrihaEzL1VwbG9hZGZpbGUvaW1hZ2UvQjIwMTQxMTE5OTQ4MTYyMDPmjZXpsbzovr7kuroucG5nD+aNlemxvOi+vuS6uuKFoQQxMDAwD+aNlemxvOi+vuS6uuKFoQ/mjZXpsbzovr7kurrihaFkAgMPZBYCZg8VBwMxMjMM6aOe56a96LWw5YW9My9VcGxvYWRmaWxlL2ltYWdlL0IyMDE0MTExOTEwNzQ2NzUw6aOe56a96LWw5YW9LnBuZwzpo57npr3otbDlhb0DMTIzDOmjnuemvei1sOWFvQzpo57npr3otbDlhb1kAgQPZBYCZg8VBwMxMjcJ56Kw56Kw6L2mMC9VcGxvYWRmaWxlL2ltYWdlL0IyMDE0MTExOTk1NDQ1NTkz56Kw56Kw6L2mLnBuZwnnorDnorDovaYDMTI3CeeisOeisOi9pgnnorDnorDovaZkZKPx7HHQHRwmXko4zGy3GaSJ6+V2M2vXIa33+/Ri8ieQ" />
+    <form name="form1" method="post" action="lightBox.js?v=2013" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5MDMzOTEzMzkPZBYCAgMPZBYCAgQPFgIeC18hSXRlbUNvdW50AgEWAmYPZBYCZg8VDQEzImIyMDE0MTAzMTE1NTgzNjM5N+eZvuS6uueJm+eJmy5qcGcJ55S16K+d5Y2hCeeUteivneWNoQbkuZDosYYBMAEzATMBMAEwImIyMDE0MTAzMTE1NTgzNjM5N+eZvuS6uueJm+eJmy5qcGcEMTAwMQnnlLXor53ljaFkZGDKJBiQFgUQ2mogRRhd+lzOOIOZwsU2NiFvSiqh2Ys7" />
 
     <div class="wrap">
 <div class="topbg">
 <div class="topw">
 
-<h1></br><a href="../default.html"><img src="http://www.2479.com/upload/logo/2479logo.png" alt="【2479游戏城】_国内最大了游戏平台官方网站游戏平台" /></a></h1>
+<h1></br><a href="../Default.aspx"><img src="http://www.2479.com/upload/logo/2479logo.png" alt="【2479游戏城】_国内最大了游戏平台官方网站游戏平台" /></a></h1>
 
 
 <div class="topTagDiv" id="topLoginIn">
 <div id="denglu_div" style="display:block; color:#2A5DA9;"><a name="toptop" id="toptop"></a><a title="设为首页" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.biyinqp.com');" style="color:#2A5DA9;" href="javascript:;">设为首页</a>
 <a href="javascript:void(0)" style="color:#2A5DA9;" onclick="addfavorite()">收藏</a>&nbsp;&nbsp;&nbsp;&nbsp;您好，欢迎光临【2479游戏城】_国内最大了游戏平台官方网站  请 <a id="but" class="action-newtopic" href="javascript:;">登录</a> |   <a href="../Register.aspx">注册</a></div>
-<div id="dengluhou_div" style="display:none; color:#2A5DA9;"><a href="../UsersMembers.aspx"></a> 您好，欢迎光临【2479游戏城】_国内最大了游戏平台官方网站  | <a href="../default.html?tid=1">退出</a></div>
+<div id="dengluhou_div" style="display:none; color:#2A5DA9;"><a href="../UsersMembers.aspx"></a> 您好，欢迎光临【2479游戏城】_国内最大了游戏平台官方网站  | <a href="../Default.aspx?tid=1">退出</a></div>
 </div>
  
      <script type="text/javascript" src="js/Login.js"></script>
@@ -123,7 +211,7 @@
                             </td>
                             <td>
                                 <a href="javascript:;" onclick="reloadcode()" title="点击重新获取">
-                                    <img id="showimg_img" src="/images/auth_code.jpeg" alt="点击重新获取" style="height: 20px;" /></a>
+                                    <img id="showimg_img" src="../ShowIMG.aspx" alt="点击重新获取" style="height: 20px;" /></a>
                             </td>
                         </tr>
                     </table>
@@ -219,7 +307,7 @@
                 onmousedown="this.src='../images/xiugaiziliao3.png'" onmouseout="this.src='../images/xiugaiziliao1.png'" onmouseover="this.src='images/xiugaiziliao2.png'" /></a> 
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <span style="color: Red;">
-                <a href="../default.html?tid=1" style="color: #0000CC;">
+                <a href="../Default.aspx?tid=1" style="color: #0000CC;">
                 <img src="../images/anquantuic1.png" onmouseup="this.src='../images/anquantuic2.png'" onmousedown="this.src='../images/anquantuic3.png'" 
                 onmouseout="this.src='../images/anquantuic1.png'" onmouseover="this.src='images/anquantuic2.png'" />
                 </a>
@@ -302,95 +390,56 @@
 
 <div id="nav"><!--NAV BEGIN-->
 <ul>
-<li class="nav0"><a href="default.html" target="_self" title="官方首页">官方首页</a></li>
-<li class="nav1"><a href="newlist.html" target="_self" title="新闻动态">新闻动态</a></li>
-<li class="nav2"><a href="GameList.html" target="_self" title="游戏介绍">游戏介绍</a></li>
-<li class="nav3"><a href="PayStypeList.html" target="_self" title="游戏论坛">帐号充值</a></li>
-<li class="nav4"><a href="JpShop.html" target="_self" title="奖品商城">奖品商城</a></li>
-<li class="nav5"><a href="HopeHome.html" target="_self" title="帮助中心">帮助中心</a></li>
+<li class="nav0"><a href="Default.aspx" target="_self" title="官方首页">官方首页</a></li>
+<li class="nav1"><a href="NewList.aspx?sid=1" target="_self" title="新闻动态">新闻动态</a></li>
+<li class="nav2"><a href="GameList.aspx" target="_self" title="游戏介绍">游戏介绍</a></li>
+<li class="nav3"><a href="../PayStypeList.aspx" target="_self" title="游戏论坛">帐号充值</a></li>
+<li class="nav4"><a href="JpShop.aspx" target="_self" title="奖品商城">奖品商城</a></li>
+<li class="nav5"><a href="HopeHome.aspx" target="_self" title="帮助中心">帮助中心</a></li>
 </ul>
 </div>
-<!--NAV END-->
-<div id="ifocus"><!--FOCUS BEGIN-->
-<!--效果开始-->
-<div class="sliderkit photoslider-bullets" style="display: block; z-index:0;">
-    <div class="sliderkit-nav">
-      <div class="sliderkit-nav-clip" style="width: 100px; height: 18px;">
-        <ul style="width: 100px;">
-          <li style="width: 18px; height: 18px;"><a href="#">1</a></li>
-          <li style="width: 18px; height: 18px;"><a href="#">2</a></li>
-          <li style="width: 18px; height: 18px;"><a href="#">3</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="sliderkit-panels">
-      <div class="sliderkit-panel"><a href=#" target="_blank"><img src="images/guanggao001.png" WIDTH=470px; HEIGHT= 230px; alt="2479游戏城"></a> </div>
-      <div class="sliderkit-panel"><a href="#" target="_blank"><img src="images/guanggao002.png" WIDTH=470px; HEIGHT=230px; alt="2479游戏城"></a> </div>
-      <div class="sliderkit-panel"><a href="#" target="_blank"><img src="images/guanggao003.png" WIDTH=470px; HEIGHT=230px; alt="2479游戏城"></a> </div>
-    </div>
-  </div>
-<!--End-->
+<div style="background:url(../images/jiangpshangc.png); margin-top:60px; height:712px;">
+<div style="padding-top:20px; text-align:right; padding-right:30px; color:#2A5DA9;">您当前的位置是&nbsp;:&nbsp;首页&nbsp;>&nbsp;奖品商城</div>
+<div style="height:30px;"></div>
+<div>
+<div style="background:url(../images/Shop1234.png); margin-left:10px; margin-top:10px; width:678px; height:49px;">
 </div>
-<!--FOCUS END-->
-<div id="Div1" style="width:240px; height:236px; float:right; background:url(images/tag_khfw_home.png);">
-<div style="margin-top:80px; margin-left:20px; height:28px; width:200px; color:#F85B00; font-size:20px; font-family:@Adobe 黑体 Std R; font-style:oblique; font-weight:bold;">&nbsp;&nbsp;&nbsp;&nbsp;               </div>
-<div style="margin-top:25px; margin-left:40px; height:28px; width:115px; color:#F85B00; font-size:20px; font-family:@Adobe 黑体 Std R; font-style:oblique; font-weight:bold;">88392479</div>
-<div style="margin-top:5px; margin-left:20px; height:50px; width:200px;"><a  rel="nofollow" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=88392479&site=qq&menu=yes"><img src="images/fxx_01.png"  onmouseover="this.src='images/fxx_02.png'" onmouseout="this.src='images/fxx_01.png'" onmousedown="this.src='images/fxx_03.png'" onmouseup="this.src='images/fxx_02.png'" /></a></div>
-</div><!--FOCUS END-->
+<div class="products_a_b_right">
 
-<div class="irwidth mt10">
-<div class="classListDiv fl" style="background:url(images/tag-home.png);">
-<div id="news" style="background:url(images/tag_gg_home.png); width:466px; margin-left:5px; height:222px; margin-top:5px;">
-<div class="classTags index_listbar">
-<a id="a_1" href="NewList.aspx?sid=1">公告</a>
-<a id="a_2" href="NewList.aspx?sid=2">新闻</a>
-
+<div class="products_a_b_right_a">
+<div class="products_a_b_right_a_01 " style="text-align:center;">
+<a href="ShopDetail.aspx?id=3">
+<img width="97" height="97" border="0" src="../Manage/upload/jiangpin/b20141031155836397百人牛牛.jpg" alt="电话卡">
+</a>
 </div>
-<div class="tags_content">
-<ul class="tags_content_list" style="height:160px;">
-<li><span class="fl">暂时没有公告!</span><span class="fr"></span></li>
-</ul> 
-<span style="color:Red; margin-left:400px;"><a href="NewList.aspx?sid=1" style="color:Red;">更多>></a></span>
-</div> 
-<div class="tags_content CssNone"> 
-<ul class="tags_content_list"  style="height:160px;">
-<li><span class="fl">暂时没有公告!</span><span class="fr"></span></li>
-</ul>
-<span style="color:Red; margin-left:400px;"><a href="NewList.aspx?sid=2" style="color:Red;">更多>></a></span>
+<div class="products_a_b_right_a_02">
+<div class="products_a_b_right_a_02_01">
+<div align="center">电话卡</div>
+</div>
+<div class="products_a_b_right_a_02_02">
+<div align="left" ></div>
+<div align="left" >
+需要乐豆奖券:0
+<spa></spa>
+</div>
+</div>
+<div class="products_a_b_right_a_02_03">
+<a href="ShopDetail.aspx?id=3">
+<div class="products_a_b_right_a_02_03_as"></div>
+</a>
+<a href="javascript:;" onclick='ProImgShow(3,0,0,"b20141031155836397百人牛牛.jpg","1001","电话卡")'>
+<div class="products_a_b_right_a_02_03_b"></div>
+</a>
+</div>
+</div>
 </div>
 
 </div>
-</div>
-<div class="ddzbs fr" style="background:url(images/tag_cjwt_home.png);">
-<div class="ddzbs_1"></div>
-<ul class="tags_content_list" style="margin-top:40px;">
-
-</ul>
-<span style="color:Red; margin-left:130px;"><a href="NewList.aspx?sid=3" style="color:Red;">更多>></a></span>
+<div align="center"><a href="#" style="color:#808080;">上一页</a>&nbsp;&nbsp; 1/1 &nbsp;&nbsp;<a href="JpShop.aspx?page=1" style="color:#4FA3F7;">下一页</a></div>
 </div>
 </div>
-<div class="irwidth mt10">
-<div style="background:url(images/tag_yxtj_home.png);" class="tag_uctj fl">
-<ul>
 
-<li><a href="GameShow.aspx?id=501" title="夺宝游戏"><img src="/Uploadfile/image/B20154918361314B2014121992227777lianhuan.png" width="132" height="146" alt="夺宝游戏"/></a>
-<span><a href="GameShow.aspx?id=501" title="夺宝游戏">夺宝游戏</a></span></li>
-
-<li><a href="GameShow.aspx?id=999" title="鱼王争霸"><img src="/Uploadfile/image/B2014111910157671渔王争霸.png" width="132" height="146" alt="鱼王争霸"/></a>
-<span><a href="GameShow.aspx?id=999" title="鱼王争霸">鱼王争霸</a></span></li>
-
-<li><a href="GameShow.aspx?id=1000" title="捕鱼达人Ⅱ"><img src="/Uploadfile/image/B2014111994816203捕鱼达人.png" width="132" height="146" alt="捕鱼达人Ⅱ"/></a>
-<span><a href="GameShow.aspx?id=1000" title="捕鱼达人Ⅱ">捕鱼达人Ⅱ</a></span></li>
-
-<li><a href="GameShow.aspx?id=123" title="飞禽走兽"><img src="/Uploadfile/image/B2014111910746750飞禽走兽.png" width="132" height="146" alt="飞禽走兽"/></a>
-<span><a href="GameShow.aspx?id=123" title="飞禽走兽">飞禽走兽</a></span></li>
-
-<li><a href="GameShow.aspx?id=127" title="碰碰车"><img src="/Uploadfile/image/B2014111995445593碰碰车.png" width="132" height="146" alt="碰碰车"/></a>
-<span><a href="GameShow.aspx?id=127" title="碰碰车">碰碰车</a></span></li>
-
-</ul>
-</div>
-</div>
+<div style="background:url(../images/yuanjiao.png); height:5px;"></div>
 </div><!--RIGHT END-->
 </div>
 <!--快速注册-->
@@ -421,7 +470,6 @@
 <div style='display:none;'><a href='http://www.live800.com'>客户服务</a></div><script language="javascript" src="http://szzero.livechatvalue.com/chat/chatClient/floatButton.js?jid=7182152431&companyID=448065&configID=47849&codeType=custom"></script><div style='display:none;'><a href='http://en.live800.com'>live chat</a></div>
 <!-- 在线客服图标:默认图标 结束-->
 </div>
-
     </form>
 </body>
 </html>
