@@ -87,7 +87,7 @@
 <div class="topbg">
 <div class="topw">
 
-<h1></br><a href="../Default.html"><img src="http://www.2479.com/upload/logo/2479logo.png" alt="【2479游戏城】_国内最大了游戏平台官方网站游戏平台" /></a></h1>
+<h1></br><a href="../Default.html"><img src="images/2479logo.png" alt="【2479游戏城】_国内最大了游戏平台官方网站游戏平台" /></a></h1>
 
 
 <div class="topTagDiv" id="topLoginIn">
